@@ -8,7 +8,7 @@
 
 ## Grupo 4 
 
-## Integrantes: <a href="https://www.linkedin.com/in/brunacristinalira/">Bruna Cristina Lira</a>, <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes </a>, <a href="https://www.linkedin.com/in/isabela-nunes-zeferino/">Isabela Nunes Zeferino </a>, <a href="https://www.linkedin.com/in/rafaela-coelho-bastos-7b8ba61b4/">Rafaela Coelho Bastos</a>
+## Integrantes: <a href="https://www.linkedin.com/in/brunacristinalira/">Bruna Cristina Lira</a>, <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes </a>, <a href="https://www.linkedin.com/in/isabela-nunes-zeferino/">Guilherme Luis Martins Passos</a>, <a href="https://www.linkedin.com/in/rafaela-coelho-bastos-7b8ba61b4/">Rafaela Coelho Bastos</a>
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosseti de Queiroz</a>, <a href="https://www.linkedin.com/in/aimarlopes/">Aimar Lopes </a>, <a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">Eduardo Savino</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>, <a href="https://www.linkedin.com/in/jbuesso/">José Buesso</a> 
 
 
@@ -16,7 +16,7 @@
 
 <p align="center">
 <img src="imagens/home%20assets/logo.png" alt="Sabor Solidario" border="0">
-    Projeto feito por: Bruna Lira, Deivid Gomes, Isabela Nunes e Rafaela Coelho
+    Projeto feito por: Bruna Lira, Deivid Gomes, Guilherme Luis e Rafaela Coelho
 </p>
 
 <br><br>
