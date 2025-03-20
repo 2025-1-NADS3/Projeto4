@@ -78,7 +78,7 @@ Há também 3 pastas que seguem da seguinte forma:
 
 ## 🎨 Protótipo no Figma
 
-Confira o design e interações do **Fecapay** no **[Figma](https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1)**.
+Confira o design e interações do **Fecapay** no **[Figma](https://www.figma.com/design/uScZbkNU86u2QLtwCOo2dG/app?node-id=23-3&p=f&t=MyPZ2ZL0EhklhdKW-0)**.
 
 ---
 
@@ -112,18 +112,18 @@ Confira o design e interações do **Fecapay** no **[Figma](https://www.figma.co
 ### **2️⃣ Configurando o Banco de Dados SQLite**
 1. O SQLite já está embutido no projeto, sem necessidade de instalação adicional.
 2. Para visualizar e gerenciar o banco, utilize ferramentas como:
- - [DB] ()
- - [SQLiteStudio] ()
+ - DB
+ - SQLiteStudio
 
 
 ## 📌 Estrutura do Aplicativo
-📌 Telas Principais
-📌 Login & Cadastro: Autenticação via e-mail/senha ou Google.
-📌 Dashboard: Exibe o saldo e atalhos para funcionalidades principais.
-📌 Pagamento via QR Code: Escaneie o código e confirme o pagamento.
-📌 Recarga de Saldo: Adicione saldo via Pix, cartão ou boleto.
-📌 Histórico de Transações: Consulte compras e baixe recibos digitais.
-📌 Promoções & Cashback: Veja ofertas e resgate recompensas.
+- 📌 Telas Principais
+- 📌 Login & Cadastro: Autenticação via e-mail/senha ou Google.
+- 📌 Dashboard: Exibe o saldo e atalhos para funcionalidades principais.
+- 📌 Pagamento via QR Code: Escaneie o código e confirme o pagamento.
+- 📌 Recarga de Saldo: Adicione saldo via Pix, cartão ou boleto.
+- 📌 Histórico de Transações: Consulte compras e baixe recibos digitais.
+- 📌 Promoções & Cashback: Veja ofertas e resgate recompensas.
 
 
 ## 📋 Licença/License
