@@ -27,7 +27,7 @@
 ## 📖 Descrição
 
 <p align="center">
-<img src="Imagens/Logo_FecaPay.jpeg" alt="FecaPay" width="250">
+<img src="Imagens/Logo FecaPay.jpeg" alt="FecaPay" width="250">
 </p>
 
 O **Fecapay** é um aplicativo mobile que permite que alunos e funcionários realizem pagamentos dentro do ambiente universitário de forma **prática e segura**. Com o **Fecapay**, compras na **cantina, livraria e biblioteca** são feitas sem dinheiro físico, utilizando **QR Code e saldo digital unificado**.
@@ -76,94 +76,54 @@ Há também 3 pastas que seguem da seguinte forma:
 
 <b>src</b>: Pasta que contém o código fonte.
 
-## 📄 Protótipo no Figma 
+## 🎨 Protótipo no Figma
 
-Você pode visualizar o protótipo do projeto [aqui](https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1) para conferir o design e a interação.
+Confira o design e interações do **Fecapay** no **[Figma](https://www.figma.com/design/j4pC2lMTqTk5AlOf6fuSlP/Untitled?node-id=0-1&t=RnJ7I26mfWgrJikd-1)**.
+
+---
+
+## 🛠 Linguagens e Tecnologias Usadas
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" height="50" alt="Java"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="50" height="50" alt="Android"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="50" height="50" alt="SQLite"/>
+</p>
+
+- **Frontend:** Android Studio (Java)  
+- **Backend:** SQLite (banco de dados local)  
+- **Autenticação:** Firebase Authentication (Google Sign-In e e-mail/senha)  
+- **Pagamentos:** Integração com API financeira para processar transações  
+
+---
+
+## 📥 Instalação e Configuração
+
+### **1️⃣ Configurando o Ambiente de Desenvolvimento**
+
+1. Baixe e instale o **[Android Studio](https://developer.android.com/studio)**.
+2. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-repositorio/fecapay.git
+   cd fecapay/src/frontend
+3. Abra o projeto no Android Studio e configure o emulador ou conecte um dispositivo físico.
+4. Compile e execute o aplicativo.
+
+### **2️⃣ Configurando o Banco de Dados SQLite**
+1. O SQLite já está embutido no projeto, sem necessidade de instalação adicional.
+2. Para visualizar e gerenciar o banco, utilize ferramentas como:
+ - [DB] ()
+ - [SQLiteStudio] ()
 
 
-## ✔ Linguagens e Tecnologias Usadas
-
-<div style="display: flex; align-items: center;">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40" alt="React" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40" alt="MySQL" />
-</div>
-
-## 🛠 Instalação
-
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
-
-<h2>💻 Configuração para Desenvolvimento</h2>
-
-<h3>🚀 Passo a Passo para Instalar o React</h3>
-<ol>
-  <li><b>Instale o Node.js</b><br>
-    Acesse <a href="https://nodejs.org/" target="_blank">nodejs.org</a> e baixe a versão recomendada para seu sistema operacional. A instalação do Node inclui o npm, o gerenciador de pacotes que você usará para instalar o React.
-  </li>
-  <li><b>Crie seu Projeto em React</b><br>
-    Abra o terminal e navegue até a pasta onde deseja criar o projeto. Execute o comando:
-    <pre><code>npx create-react-app nome-do-projeto</code></pre>
-    Esse comando irá configurar uma estrutura inicial para o seu projeto em React.
-  </li>
-  <li><b>Inicie o Servidor de Desenvolvimento</b><br>
-    Depois que o projeto for criado, entre na pasta do projeto:
-    <pre><code>cd nome-do-projeto</code></pre>
-    Inicie o servidor de desenvolvimento com:
-    <pre><code>npm start</code></pre>
-    O React abrirá automaticamente o projeto no navegador em <code>http://localhost:3000</code>, onde você poderá ver a aplicação funcionando.
-  </li>
-</ol>
-
-<hr>
-
-<h3>🔧 Ferramentas de Desenvolvimento:</h3>
-
-<h4>1. Editor de Código 🖥️</h4>
-<ul>
-  <li><b>Visual Studio Code</b>: Um editor leve e extensível, ideal para desenvolvimento em JavaScript, HTML e CSS. Oferece autocompletar, integração com Git e várias extensões para facilitar a programação em React.js.</li>
-  <li><b>Visual Studio</b>: Mais robusto, ideal para desenvolvimento em C# e ASP.NET Core no back-end. Conta com debugging integrado e suporte a APIs.</li>
-</ul>
-
-<h4>2. Versionamento de Código 🗂️</h4>
-<ul>
-  <li><b>Git</b>: Sistema de controle de versão para gerenciar alterações, colaborar com a equipe e rastrear o histórico do projeto.</li>
-  <li><b>GitHub</b>: Hospedagem de repositórios para gerenciamento de issues, pull requests e colaboração em equipe.</li>
-</ul>
-
-<h4>3. Framework Front-end 🎨</h4>
-<ul>
-  <li><b>HTML5</b>: Estrutura o conteúdo da aplicação.</li>
-  <li><b>CSS3</b>: Responsável pela estilização.</li>
-  <li><b>JavaScript</b>: Linguagem para tornar o site interativo.</li>
-  <li><b>React</b>: Biblioteca JavaScript para criar interfaces de usuário interativas e componentes reutilizáveis. Facilita o desenvolvimento de SPAs (Single Page Applications).</li>
-</ul>
-
-<h4>4. Back-end 🛠️</h4>
-<ul>
-  <li><b>ASP.NET Core</b>: Framework open-source para criar APIs em C# e gerenciar interações com a aplicação.</li>
-</ul>
-
-<h4>5. Sistema Operacional 🖥️</h4>
-<ul>
-  <li><b>Windows, macOS ou Linux</b>: A escolha depende da equipe, e as principais ferramentas (como VS Code) são multiplataforma.</li>
-</ul>
-
-<h4>6. Node.js 🛠️</h4>
-<ul>
-  <li><b>Node.js</b>: Essencial para gerenciar pacotes e bibliotecas JavaScript no front-end com React.</li>
-</ul>
-
-<h4>7. Ferramentas de Design 🎨</h4>
-<ul>
-  <li><b>Figma</b>: Para prototipagem e layout visual.</li>
-  <li><b>Canva</b>: Criação de banners, imagens e ícones adicionais.</li>
-</ul>
+## 📌 Estrutura do Aplicativo
+📌 Telas Principais
+📌 Login & Cadastro: Autenticação via e-mail/senha ou Google.
+📌 Dashboard: Exibe o saldo e atalhos para funcionalidades principais.
+📌 Pagamento via QR Code: Escaneie o código e confirme o pagamento.
+📌 Recarga de Saldo: Adicione saldo via Pix, cartão ou boleto.
+📌 Histórico de Transações: Consulte compras e baixe recibos digitais.
+📌 Promoções & Cashback: Veja ofertas e resgate recompensas.
 
 
 ## 📋 Licença/License
