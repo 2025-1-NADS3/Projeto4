@@ -1,61 +1,76 @@
 # FECAP - Fundação de Comércio Álvares Penteado
 
 <p align="center">
-<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
+<a href="https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado"></a>
 </p>
 
-# FecaPay
+---
 
-## Grupo 4 
+# Fecapay – Pagamentos Universitários Inteligentes
 
-## Integrantes: <a href="https://www.linkedin.com/in/brunacristinalira/">Bruna Cristina Lira</a>, <a href="https://www.linkedin.com/in/deivid-gomes09/">Deivid Gomes </a>, <a href="https://www.linkedin.com/in/isabela-nunes-zeferino/">Guilherme Luis Martins Passos</a>, <a href="https://www.linkedin.com/in/rafaela-coelho-bastos-7b8ba61b4/">Rafaela Coelho Bastos</a>
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosseti de Queiroz</a>, <a href="https://www.linkedin.com/in/aimarlopes/">Aimar Lopes </a>, <a href="https://www.linkedin.com/in/eduardo-savino-gomes-77833a10/">Eduardo Savino</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>, <a href="https://www.linkedin.com/in/jbuesso/">José Buesso</a> 
+## 👨‍💻 Grupo 4
 
+### **Integrantes:**  
+- [Bruna Cristina Lira](https://www.linkedin.com/in/brunacristinalira/)  
+- [Deivid Gomes](https://www.linkedin.com/in/deivid-gomes09/)  
+- [Guilherme Luis Martins Passos](https://www.linkedin.com/in/guilhermelmpassos/)  
+- [Rafaela Coelho Bastos](https://www.linkedin.com/in/rafaela-coelho-bastos-7b8ba61b4/)  
+
+### **Professores Orientadores:**  
+- Jefferson de Oliveira Silva  
+- [Aimar Lopes](https://www.linkedin.com/in/aimarlopes/)  
+- Vinicius Heltai Pacheco  
+- [Francisco Escobar](https://www.linkedin.com/in/francisco-escobar/)  
+
+---
 
 ## 📖 Descrição
 
 <p align="center">
-<img src="imagens/home%20assets/logo.png" alt="Sabor Solidario" border="0">
-    Projeto feito por: Bruna Lira, Deivid Gomes, Guilherme Luis e Rafaela Coelho
+<img src="Imagens/Logo_FecaPay.jpeg" alt="FecaPay" width="250">
 </p>
 
-<br><br>
+O **Fecapay** é um aplicativo mobile que permite que alunos e funcionários realizem pagamentos dentro do ambiente universitário de forma **prática e segura**. Com o **Fecapay**, compras na **cantina, livraria e biblioteca** são feitas sem dinheiro físico, utilizando **QR Code e saldo digital unificado**.
 
+O sistema foi desenvolvido para proporcionar uma **experiência rápida e otimizada**, eliminando filas e melhorando a eficiência das transações dentro do campus.
 
-O projeto "Sabor Solidário" tem como objetivo criar uma plataforma online que facilite o cadastro de ONGs e a conexão entre doadores (empresas e indivíduos) com alimentos excedentes e instituições ou pessoas em situação de insegurança alimentar. A ideia é reduzir o desperdício de alimentos, permitindo que itens ainda aptos para consumo sejam direcionados de forma eficiente a quem mais precisa.
+---
 
-A plataforma será responsiva, funcionando tanto em dispositivos móveis quanto em desktops, e oferecerá recursos que tornam o processo de doação simples, rápido e intuitivo. Além disso, o site permitirá que doadores busquem ONGs por localização geográfica, possibilitando a doação para estados diferentes ou a busca pela ONG mais próxima. Também incluirá conteúdos educativos sobre o impacto do desperdício de alimentos e formas de reduzi-lo, promovendo a conscientização social e a responsabilidade compartilhada.
-<br><br>
+## 🚀 Funcionalidades Principais
 
-Link do site: https://frontsaborsolidario.vercel.app/
+- ✅ **Pagamento via QR Code:** escaneie e pague instantaneamente.  
+- ✅ **Saldo Digital Unificado:** utilize um único saldo para todos os estabelecimentos.  
+- ✅ **Histórico de Transações:** visualize compras, detalhes e recibos digitais.  
+- ✅ **Recarga de Saldo:** adicione dinheiro via **Pix, cartão de crédito/débito ou boleto**.  
+- ✅ **Transferência de Saldo:** envie saldo para amigos diretamente pelo app.  
+- ✅ **Cashback e Promoções:** obtenha recompensas e descontos exclusivos.  
+- ✅ **Banco de Dados Local:** SQLite para armazenamento seguro dos dados.  
 
+---
 
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
 |<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
+|-->Documentos<br>
+  &emsp;|-->entrega 1<br>
+  &emsp;|-->entrega 2<br>
+  &emsp;|-->entrega 3<br>
+  &emsp;|-->entrega final <br>
 |-->imagens<br>
 |-->src<br>
   &emsp;|-->Backend<br>
   &emsp;|-->Frontend<br>
+|.gitignore<br>
 |readme.md<br>
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
-Há também 4 pastas que seguem da seguinte forma:
+Há também 3 pastas que seguem da seguinte forma:
 
 <b>documentos</b>: Toda a documentação estará nesta pasta.
-
-<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
 
 <b>imagens</b>: Imagens do sistema
 
