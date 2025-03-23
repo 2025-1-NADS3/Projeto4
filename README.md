@@ -30,7 +30,7 @@
 <img src="Imagens/Logo FecaPay.jpeg" alt="FecaPay" width="250">
 </p>
 
-O **Fecapay** é um aplicativo mobile que permite que alunos e funcionários realizem pagamentos dentro do ambiente universitário de forma **prática e segura**. Com o **Fecapay**, compras na **cantina, livraria e biblioteca** são feitas sem dinheiro físico, utilizando **QR Code e saldo digital unificado**.
+O **Fecapay** é um aplicativo mobile que permite que alunos e funcionários realizem pagamentos dentro do ambiente universitário de forma **prática e segura**. Com o **Fecapay**, compras na **cantina** são feitas sem dinheiro físico, utilizando **QR Code e saldo digital unificado**.
 
 O sistema foi desenvolvido para proporcionar uma **experiência rápida e otimizada**, eliminando filas e melhorando a eficiência das transações dentro do campus.
 
