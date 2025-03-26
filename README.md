@@ -78,7 +78,7 @@ Há também 3 pastas que seguem da seguinte forma:
 
 ## 🎨 Protótipo no Figma
 
-Confira o design e interações do **Fecapay** no **[Figma](https://www.figma.com/design/uScZbkNU86u2QLtwCOo2dG/app?node-id=23-3&p=f&t=MyPZ2ZL0EhklhdKW-0)**.
+Confira o design e interações do **Fecapay** no **[Figma](https://www.figma.com/design/uScZbkNU86u2QLtwCOo2dG/app?node-id=23-3&t=oy9jqqHfqtgiXo8i-1)**.
 
 ---
 
