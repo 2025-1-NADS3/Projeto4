@@ -17,10 +17,11 @@
 - [Rafaela Coelho Bastos](https://www.linkedin.com/in/rafaela-coelho-bastos-7b8ba61b4/)  
 
 ### **Professores Orientadores:**  
-- Jefferson de Oliveira Silva  
+- [Jefferson de Oliveira Silva](https://www.linkedin.com/in/jefferson-o-silva/)
 - [Aimar Lopes](https://www.linkedin.com/in/aimarlopes/)  
-- Vinicius Heltai Pacheco  
-- [Francisco Escobar](https://www.linkedin.com/in/francisco-escobar/)  
+- [Vinicius Heltai Pacheco](https://www.linkedin.com/in/vheltai/)
+- [Francisco Escobar](https://www.linkedin.com/in/francisco-escobar/)
+- [Victor Bruno Alexander Rosetti de Quiroz](https://www.linkedin.com/in/victorbarq/)
 
 ---
 
