@@ -1,0 +1,36 @@
+Testes do Sistema FECAPAY
+
+Testes Unitários
+
+1. Validação de Login. 
+   Verifica se o sistema aceita apenas credenciais válidas e retorna erro para entradas incorretas.
+
+2. Cadastro de Usuário
+   Garante que o usuário seja corretamente registrado no sistema, com dados válidos e sem duplicidade.
+
+3. Cálculo do Cupom de Desconto
+   Testa se o valor do cupom é corretamente aplicado nas compras conforme as regras de promoção.
+
+4. Verificação de Saldo
+   Confirma que o saldo do usuário seja corretamente retornado e atualizado após cada transação.
+
+--------------------------------------------------
+
+Testes de Integração
+
+1. Login + Consulta de Saldo  
+   Após a autenticação, o sistema deve acessar corretamente o módulo de saldo.  
+   Envolve a integração entre:
+   - Autenticação do usuário  
+   - Banco de dados que armazena o saldo  
+
+2. Recarregar Saldo
+   Ao clicar em "Recarregar Saldo", a API deve:
+   - Receber a entrada do usuário  
+   - Verificar se há saldo suficiente no banco vinculado  
+   - Processar corretamente a recarga  
+   
+   Envolve a integração entre:
+   - Aplicativo FECAPAY  
+   - API de pagamento  
+   - Banco de dados do usuário  
