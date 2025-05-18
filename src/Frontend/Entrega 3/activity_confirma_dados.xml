@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6EAFF">
+
+    <!-- TOPO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#63D471"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tresbarrinhas"
+            android:contentDescription="Menu" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sininho"
+            android:contentDescription="Notificações" />
+    </LinearLayout>
+
+    <!-- CONTEÚDO CENTRAL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- LOGO -->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp" />
+
+            <!-- TÍTULO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONFIRME OS DADOS"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- NOME E FOTO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/pessoa"
+                    android:background="@drawable/bg_retangulo_green"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PEDRO COSTA"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- DETALHES DE TRANSFERÊNCIA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="VALOR"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 0,00"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- OUTROS DADOS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CPF                         ***.123.456-**"
+                android:textSize="12sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INSTITUIÇÃO          BANCO"
+                android:textSize="12sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AGÊNCIA                  000"
+                android:textSize="12sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTA CORRENTE   1111111-1"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_marginBottom="32dp" />
+
+            <!-- BOTÃO TRANSFERIR -->
+            <TextView
+                android:id="@+id/btn_transferir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_rounded_green"
+                android:paddingLeft="24dp"
+                android:paddingTop="10dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="10dp"
+                android:text="TRANSFERIR"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- RODAPÉ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#63D471">
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/saiir" android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/qrcode" android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/casinhahome" android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/compr" android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/pessoacir" android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C6EAFF">
+
+    <!-- TOPO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#63D471"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tresbarrinhas"
+            android:contentDescription="Menu" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sininho"
+            android:contentDescription="Notificações" />
+    </LinearLayout>
+
+    <!-- CONTEÚDO -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Título com ícone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_notificacao"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTIFICAÇÕES"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Notificação 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIX RECEBIDO"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOMAS CAMPOSALLES enviou um Pix de R$ 0,00 para você."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Notificação 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIX ENVIADO"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Você enviou um Pix de R$ 0,00 para PILAR ARARIPE."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Notificação 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAGAMENTO DIVIDIDO"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Você dividiu um pagamento de R$ 0,00 com CARLA FERRER. Cada um pagou R$ 0,00."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Notificação 4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAGAMENTO VIA QR CODE"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pagamento de R$ 0,00 via QR Code efetuado com sucesso."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- RODAPÉ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#63D471">
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/saiir" android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/qrcode" android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/casinhahome" android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/compr" android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/pessoacir" android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp"/>
+    </LinearLayout>
+</LinearLayout>
