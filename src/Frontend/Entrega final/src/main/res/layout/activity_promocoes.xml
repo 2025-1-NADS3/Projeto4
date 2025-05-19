@@ -92,6 +92,7 @@
 
                 <!-- Card 1: Suco -->
                 <LinearLayout
+                    android:id="@+id/btnCupom1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
@@ -114,6 +115,7 @@
 
                 <!-- Card 2: Combo -->
                 <LinearLayout
+                    android:id="@+id/btnCupom2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
@@ -130,7 +132,9 @@
                 </LinearLayout>
 
                 <!-- Card 3: Brownie -->
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:orientation="vertical" android:background="#68e16c" android:padding="8dp">
+                <LinearLayout
+                    android:id="@+id/btnCupom3"
+                    android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:orientation="vertical" android:background="#68e16c" android:padding="8dp">
                     <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:scaleType="centerCrop" android:src="@drawable/img_brownie" />
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Doce Extra!" android:textStyle="bold" android:textColor="#1B7E00" android:textSize="14sp" android:layout_marginTop="4dp" />
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Na compra de qualquer doce, ganhe 1 brownie exclusivo" android:textSize="12sp" />
@@ -140,7 +144,9 @@
                 </LinearLayout>
 
                 <!-- Card 4: Cafe -->
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:orientation="vertical" android:background="#68e16c" android:padding="8dp">
+                <LinearLayout
+                    android:id="@+id/btnCupom4"
+                    android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:orientation="vertical" android:background="#68e16c" android:padding="8dp">
                     <ImageView android:layout_width="match_parent" android:layout_height="90dp" android:scaleType="centerCrop" android:src="@drawable/img_cafe" />
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Café Universitário" android:textStyle="bold" android:textColor="#1B7E00" android:textSize="14sp" android:layout_marginTop="4dp" />
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Promoção Café + Pão de queijo por R$12" android:textSize="12sp" />

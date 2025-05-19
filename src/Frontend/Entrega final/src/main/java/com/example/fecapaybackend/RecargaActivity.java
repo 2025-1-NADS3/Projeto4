@@ -4,23 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RecargaActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adicionar_saldo); // Certifique-se que é o nome correto do XML
+        setContentView(R.layout.activity_adicionar_saldo); // O layout que contém o botão
 
-        Button btnContinuar = findViewById(R.id.btnContinuar);
+        Button btnAdicionar = findViewById(R.id.btnAdicionar); // Esse ID vem do botão no seu XML
 
-        btnContinuar.setOnClickListener(new View.OnClickListener() {
+        btnAdicionar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Abre a tela com o QR Code de recarga
-                Intent intent = new Intent(RecargaActivity.this, RecargaPixConfirmadaActivity.class);
+                // Verifique se essa Activity está no manifest
+                Intent intent = new Intent(RecargaActivity.this, RecargaCartaoActivity.class);
                 startActivity(intent);
             }
         });

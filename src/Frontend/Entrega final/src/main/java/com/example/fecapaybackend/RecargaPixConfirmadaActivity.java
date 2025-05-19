@@ -7,17 +7,18 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RecargaPixConfirmadaActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ler_qrcode); // <-- nome do layout da TELA ATUAL (QR Code)
 
-        // Espera 5 segundos, depois abre a tela de sucesso
+        // Essa é a tela do QR Code (que aparece primeiro)
+        setContentView(R.layout.activity_ler_qrcode);
+
+        // Depois de 5 segundos, abre a tela de confirmação de recarga
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(RecargaPixConfirmadaActivity.this, RecargaSucessoActivity.class);
+            Intent intent = new Intent(RecargaPixConfirmadaActivity.this, RecargaConfirmadaActivity.class);
             startActivity(intent);
             finish();
-        }, 5000);
+        }, 5000);// 5000 ms = 5 segundos
     }
 }

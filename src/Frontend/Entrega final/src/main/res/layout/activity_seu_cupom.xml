@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#C9EBFF">
 
@@ -140,42 +141,50 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- RODAPÉ FIXO -->
+    <!-- Rodapé fixo -->
     <LinearLayout
+        android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#68e16c"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@color/verde"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/seta"
-            android:layout_margin="8dp" />
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/saiir"
+            android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/qrcode"
-            android:layout_margin="8dp" />
+            android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/casinhahome"
-            android:layout_margin="8dp" />
+            android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/compr"
-            android:layout_margin="8dp" />
+            android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/pessoacir"
-            android:layout_margin="8dp" />
+            android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp" />
     </LinearLayout>
 </LinearLayout>

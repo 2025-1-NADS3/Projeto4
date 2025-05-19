@@ -41,6 +41,10 @@
         <activity android:name=".PixCopiaColaActivity" />
         <activity android:name=".PagamentoRealizadoActivity" />
         <activity android:name=".RecargaPixConfirmadaActivity" />
+        <activity android:name=".RecargaConfirmadaActivity" />
+        <activity android:name=".RecargaCartaoActivity" />
+        <activity android:name=".SeuCupomActivity" />
+
 
 
     </application>
