@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6EAFF"
+    android:orientation="vertical">
+
+    <!-- TOPO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#63D471"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tresbarrinhas"
+            android:contentDescription="Menu" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sininho"
+            android:contentDescription="Notificações" />
+    </LinearLayout>
+
+    <!-- CONTEÚDO -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Ícone e título centralizado -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/luz"
+                android:contentDescription="Ajuda"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AJUDA"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Blocos de dúvidas -->
+            <!-- Repetindo os 4 blocos conforme seu código -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como faço um pagamento com QR Code?"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vá até a tela inicial, clique em “QR Code”, escaneie o código do local desejado e confirme o valor da transação."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como recarrego meu saldo?"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toque em “Recarga”, escolha o valor desejado e o método de pagamento (boleto, pix ou cartão) e siga as instruções."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como divido uma conta com meus amigos?"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Use o botão “Dividir Conta”, selecione o valor total e os usuários envolvidos. O FecaPay calcula o valor para cada um automaticamente."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como vejo meus pagamentos antigos?"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Na tela inicial, clique em 'Ver Extrato' no canto superior direito ou use 'Extrato Completo' no menu."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- RODAPÉ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#63D471">
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/saiir" android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/qrcode" android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/casinhahome" android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/compr" android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp"/>
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/pessoacir" android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp"/>
+    </LinearLayout>
+</LinearLayout>

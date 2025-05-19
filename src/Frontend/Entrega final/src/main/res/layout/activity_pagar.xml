@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#C6EAFF">
+
+    <!-- TOPO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#63D471"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tresbarrinhas"
+            android:contentDescription="Menu" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@drawable/sininho"
+            android:contentDescription="Notificações" />
+    </LinearLayout>
+
+    <!-- CONTEÚDO ROLÁVEL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Conteúdo que você enviou começa aqui -->
+
+            <!-- LOGO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <!-- Caixa de saldo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/borda_caixa_saldo"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SALDO ATUAL"
+                    android:textSize="10sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_saldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 1.000.000.000,00"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/olho" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- PAGAR título -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAGAR"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="start" />
+
+            <!-- Ícones de pagamento -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="3"
+                android:layout_marginBottom="24dp">
+
+                <!-- Transferir -->
+                <LinearLayout
+                    android:id="@+id/btnTransferir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/bg_circle_green"
+                        android:padding="14dp"
+                        android:src="@drawable/seta"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TRANSFERIR"
+                        android:textSize="10sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- QR Code -->
+                <LinearLayout
+                    android:id="@+id/botao_qrcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/bg_circle_green"
+                        android:padding="14dp"
+                        android:src="@drawable/qrcode"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QR CODE"
+                        android:textSize="10sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Pix Copia e Cola -->
+                <LinearLayout
+                    android:id="@+id/btnPixCopiaCola"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/bg_circle_green"
+                        android:padding="14dp"
+                        android:src="@drawable/copia"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PIX COPIA E COLA"
+                        android:textSize="10sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- CONTATOS RECENTES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTATOS RECENTES"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:background="@drawable/bg_rounded_purple_outline"
+                android:textColor="#000"
+                android:layout_marginBottom="12dp" />
+
+            <!-- CONTATOS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="4">
+
+                <!-- Contato -->
+                <LinearLayout
+                    android:id="@+id/contatoRoberta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="4dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pessoa"
+                        android:background="@drawable/bg_retangulo_green"
+                        android:padding="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ROBERTA MESSI"
+                        android:textSize="10sp"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- RODAPÉ -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/verde"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/saiir"
+            android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/qrcode"
+            android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/casinhahome"
+            android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/compr"
+            android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pessoacir"
+            android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C6EAFF">
+
+    <!-- TOPO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#63D471"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/tresbarrinhas"
+            android:contentDescription="Menu" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sininho"
+            android:contentDescription="Notificações" />
+    </LinearLayout>
+
+    <!-- CONTEÚDO -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- LOGO -->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="start"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Caixa de saldo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borda_caixa_saldo"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saldo_sublinhado"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="R$ 1.000.000.000,00"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/olho" />
+            </LinearLayout>
+
+            <!-- Gráfico de barras -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/grafico_barras"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Gráfico de pizza -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/grafico_pizza"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- RODAPÉ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#63D471">
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/saiir" android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/qrcode" android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/casinhahome" android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/compr" android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageView android:layout_width="40dp" android:layout_height="40dp"
+            android:src="@drawable/pessoacir" android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
