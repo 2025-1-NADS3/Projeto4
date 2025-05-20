@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_clarinho"
+    tools:context=".Home">
+
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/topo_padrao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- Conteúdo com Scroll -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="start"
+                android:layout_marginBottom="8dp" />
+
+
+            <!-- Caixa de saldo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_saldo"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SALDO ATUAL"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/textSaldo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="R$ ---------"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/btnMostrarOcultar"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Olho"
+                        android:src="@drawable/olho" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Botões -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- PAGAR -->
+                <LinearLayout
+                    android:id="@+id/botao_pagar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/pagar_sifrao"
+                        android:contentDescription="Pagar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAGAR"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- REPETE PARA OS OUTROS: RECARGA, QR CODE, PROMOÇÕES -->
+                <!-- RECARGA -->
+                <LinearLayout
+                    android:id="@+id/botao_recarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="Recarga"
+                        android:src="@drawable/recarga" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RECARGA"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- QR CODE -->
+                <LinearLayout
+                    android:id="@+id/botao_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="QR Code"
+                        android:src="@drawable/qrcode_botao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QR CODE"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- PROMOÇÕES -->
+                <LinearLayout
+                    android:id="@+id/botao_promocoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="Promoções"
+                        android:src="@drawable/promocoes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PROMOÇÕES"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Extrato simples -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/box_extrato"
+                android:padding="12dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DD/MM/YYYY - 00:00"
+                    android:textSize="10sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAGAMENTO NA CANTINA - Via Pix"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- app:layout_constraintBottom_toTopOf="@id/bottomBar" -->
+
+
+
+    <!-- Rodapé fixo -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/verde"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/btnSair"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/saiir"
+            android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:id="@+id/btnQrCode"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/qrcode"
+            android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/casinhahome"
+            android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:id="@+id/btnHistorico"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/compr"
+            android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:id="@+id/btnPerfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pessoacir"
+            android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

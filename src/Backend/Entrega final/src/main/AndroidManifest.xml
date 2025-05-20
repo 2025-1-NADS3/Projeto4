@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fecapaybackend">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FecapayBackend"
+        tools:targetApi="31">
+
+        <!-- Tela principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Outras telas -->
+        <activity android:name=".BemVindoActivity" />
+        <activity android:name=".CriarContaActivity" />
+        <activity android:name=".EsqueciSenhaActivity" />
+        <activity android:name=".ExcluirContaActivity" />
+        <activity android:name=".Home" />
+        <activity android:name=".PagarActivity" />
+        <activity android:name=".RecargaActivity" />
+        <activity android:name=".QrCodeActivity" />
+        <activity android:name=".PromocoesActivity" />
+        <activity android:name=".TransferenciaActivity" />
+        <activity android:name=".ConfirmarTransferenciaActivity" />
+        <activity android:name=".TransferenciaConcluidaActivity" />
+        <activity android:name=".ComprovanteActivity" />
+        <activity android:name=".PixCopiaColaActivity" />
+        <activity android:name=".PagamentoRealizadoActivity" />
+        <activity android:name=".RecargaPixConfirmadaActivity" />
+        <activity android:name=".RecargaConfirmadaActivity" />
+        <activity android:name=".RecargaCartaoActivity" />
+        <activity android:name=".SeuCupomActivity" />
+        <activity android:name=".MeusCuponsActivity" />
+        <activity android:name=".NotificacoesActivity" />
+        <activity android:name=".AjudaContatoActivity" />
+        <activity android:name=".AjudaActivity" />
+        <activity android:name=".ContatoActivity" />
+
+
+
+
+
+
+    </application>
+
+
+</manifest>

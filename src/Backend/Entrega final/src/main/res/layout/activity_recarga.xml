@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C9EBFF"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/topo_padrao" />
+
+    <!-- CONTEÚDO SCROLLÁVEL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="start"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Texto "Recarga Realizada" -->
+            <TextView
+                android:id="@+id/recargaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECARGA\nREALIZADA"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="32dp" />
+
+            <!-- Check Verde -->
+            <ImageView
+                android:id="@+id/checkImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/check_verde"
+                android:contentDescription="Check Verde" />
+
+            <!-- Botão Abrir Comprovante -->
+            <LinearLayout
+                android:id="@+id/btnAbrirComprovante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_rounded_green"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="24dp"
+                android:paddingTop="10dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/comprovante" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABRIR COMPROVANTE"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bottom_bar" />
+</LinearLayout>

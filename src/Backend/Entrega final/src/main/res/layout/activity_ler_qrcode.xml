@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C6EAFF">
+
+    <include layout="@layout/topo_padrao" />
+
+    <!-- CONTEÚDO -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="start"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Recarga via Pix com ícone -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/icone_pix" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  RECARGA VIA PIX"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Caixa de valor -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borda_caixa_saldo"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valor_sublinhado"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="12sp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/txtValor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 0,00"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Título: Leia o QR Code -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LEIA O QR CODE ↓"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="12dp"
+                android:textSize="14sp" />
+
+            <!-- QR Code -->
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/qrcode_recarregar"
+                android:layout_marginBottom="12dp" />
+
+            <!-- OU COPIE O CÓDIGO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OU COPIE O CÓDIGO"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Código chave PIX -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaabbbcccddd.123.454bbb.ccc"
+                android:background="#DDF9FF"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Instruções -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use o QR Code ou a chave\npara fazer o pagamento no seu\napp bancário.\nA recarga será processada em\naté 5 minutos."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:lineSpacingExtra="2dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bottom_bar" />
+</LinearLayout>

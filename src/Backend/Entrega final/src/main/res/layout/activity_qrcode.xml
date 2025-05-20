@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6EAFF"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Texto de instrução -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APONTE A CÂMERA PARA O QR CODE"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARA REALIZAR O PAGAMENTO"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Área do QR Code -->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#B4E3FF"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Texto inferior -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LER QR CODE"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:layout_marginBottom="8dp" />
+
+    <!-- OU -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OU"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000"/>
+
+    <!-- Botão COLAR PIX COPIA E COLA -->
+    <TextView
+        android:id="@+id/btnColarPix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COLAR PIX COPIA E COLA"
+        android:textStyle="bold"
+        android:background="@drawable/bg_rounded_green"
+        android:textColor="#000"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+</LinearLayout>
