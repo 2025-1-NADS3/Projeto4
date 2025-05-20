@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,10 +15,12 @@
         android:padding="12dp"
         android:gravity="center_vertical">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/tresbarrinhas"
+            android:background="@android:color/transparent"
             android:contentDescription="Menu" />
 
         <View
@@ -25,10 +28,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnNotificacao"
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:src="@drawable/sininho"
+            android:background="@android:color/transparent"
             android:contentDescription="Notificações" />
     </LinearLayout>
 
@@ -44,8 +49,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal">
-
-            <!-- Conteúdo que você enviou começa aqui -->
 
             <!-- LOGO -->
             <LinearLayout
@@ -77,7 +80,6 @@
                     android:textSize="10sp"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:paintFlags="underline"
                     android:layout_marginBottom="4dp" />
 
                 <LinearLayout
@@ -125,12 +127,15 @@
 
                 <!-- Transferir -->
                 <LinearLayout
+                    android:id="@+id/btnTransferir"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_margin="4dp">
+                    android:layout_margin="4dp"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <ImageView
                         android:layout_width="64dp"
@@ -152,6 +157,7 @@
 
                 <!-- QR Code -->
                 <LinearLayout
+                    android:id="@+id/botao_qrcode"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -179,6 +185,7 @@
 
                 <!-- Pix Copia e Cola -->
                 <LinearLayout
+                    android:id="@+id/btnPixCopiaCola"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -224,8 +231,8 @@
                 android:gravity="center"
                 android:weightSum="4">
 
-                <!-- Contato -->
                 <LinearLayout
+                    android:id="@+id/contatoRoberta"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -249,46 +256,63 @@
                         android:gravity="center" />
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
     <!-- RODAPÉ -->
     <LinearLayout
+        android:id="@+id/bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:background="#63D471"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@color/verde"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton
+            android:id="@+id/btnSair"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/saiir"
-            android:layout_margin="8dp"/>
+            android:background="@android:color/transparent"
+            android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton
+            android:id="@+id/btnQrCode"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/qrcode"
-            android:layout_margin="8dp"/>
+            android:background="@android:color/transparent"
+            android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/casinhahome"
-            android:layout_margin="8dp"/>
+            android:background="@android:color/transparent"
+            android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton
+            android:id="@+id/btnExtrato"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/compr"
-            android:layout_margin="8dp"/>
+            android:background="@android:color/transparent"
+            android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/pessoacir"
-            android:layout_margin="8dp"/>
+            android:background="@android:color/transparent"
+            android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp" />
     </LinearLayout>
 </LinearLayout>

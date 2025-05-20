@@ -11,24 +11,23 @@
         android:layout_height="60dp"
         android:background="#63D471"
         android:orientation="horizontal"
-        android:padding="12dp">
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/tresbarrinhas"
-            android:contentDescription="Menu" />
+        android:padding="12dp"
+        android:gravity="center_vertical">
 
         <View
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnNotificacao"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/sininho"
-            android:contentDescription="Notificações" />
+            android:background="@android:color/transparent"
+            android:contentDescription="Notificações"
+            android:clickable="true"
+            android:focusable="true" />
     </LinearLayout>
 
     <!-- CONTEÚDO -->
@@ -61,15 +60,13 @@
                 android:textColor="#000000"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Blocos de dúvidas -->
-            <!-- Repetindo os 4 blocos conforme seu código -->
+            <!-- Bloco 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="12dp"
                 android:layout_marginBottom="8dp">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -78,7 +75,6 @@
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:layout_marginBottom="4dp" />
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -87,13 +83,13 @@
                     android:textSize="13sp" />
             </LinearLayout>
 
+            <!-- Bloco 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="12dp"
                 android:layout_marginBottom="8dp">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -102,7 +98,6 @@
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:layout_marginBottom="4dp" />
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -111,13 +106,13 @@
                     android:textSize="13sp" />
             </LinearLayout>
 
+            <!-- Bloco 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="12dp"
                 android:layout_marginBottom="8dp">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -126,7 +121,6 @@
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:layout_marginBottom="4dp" />
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -135,13 +129,13 @@
                     android:textSize="13sp" />
             </LinearLayout>
 
+            <!-- Bloco 4 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="12dp"
                 android:layout_marginBottom="8dp">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -150,7 +144,6 @@
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:layout_marginBottom="4dp" />
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -169,20 +162,49 @@
         android:gravity="center"
         android:background="#63D471">
 
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/saiir" android:contentDescription="Sair"
-            android:layout_marginHorizontal="8dp"/>
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/qrcode" android:contentDescription="QR Code"
-            android:layout_marginHorizontal="8dp"/>
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/casinhahome" android:contentDescription="Home"
-            android:layout_marginHorizontal="8dp"/>
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/compr" android:contentDescription="Compras"
-            android:layout_marginHorizontal="8dp"/>
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/pessoacir" android:contentDescription="Perfil"
-            android:layout_marginHorizontal="8dp"/>
+        <ImageButton
+            android:id="@+id/btnSair"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/saiir"
+            android:background="@android:color/transparent"
+            android:contentDescription="Sair"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnQrCode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/qrcode"
+            android:background="@android:color/transparent"
+            android:contentDescription="QR Code"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/casinhahome"
+            android:background="@android:color/transparent"
+            android:contentDescription="Home"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnExtrato"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/compr"
+            android:background="@android:color/transparent"
+            android:contentDescription="Compras"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnPerfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pessoacir"
+            android:background="@android:color/transparent"
+            android:contentDescription="Perfil"
+            android:layout_marginHorizontal="8dp" />
     </LinearLayout>
 </LinearLayout>

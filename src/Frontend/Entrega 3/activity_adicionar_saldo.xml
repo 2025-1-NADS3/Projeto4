@@ -14,23 +14,27 @@
         android:orientation="horizontal"
         android:padding="12dp">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Menu"
-            android:src="@drawable/tresbarrinhas" />
+            android:src="@drawable/tresbarrinhas"
+            android:background="@android:color/transparent" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnNotificacao"
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginEnd="15dp"
             android:contentDescription="Notificações"
-            android:src="@drawable/sininho" />
+            android:src="@drawable/sininho"
+            android:background="@android:color/transparent" />
     </LinearLayout>
 
     <!-- CONTEÚDO COM SCROLL -->
@@ -175,7 +179,7 @@
             </RadioGroup>
 
             <Button
-                android:id="@+id/btnContinuar"
+                android:id="@+id/btnContinua"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="CONTINUAR"
@@ -193,34 +197,44 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnSair"
             android:layout_width="41dp"
             android:layout_height="38dp"
             android:src="@drawable/saiir"
+            android:background="@android:color/transparent"
             android:layout_marginStart="24dp" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnQrCode"
             android:layout_width="39dp"
             android:layout_height="38dp"
             android:src="@drawable/qrcode"
+            android:background="@android:color/transparent"
             android:layout_marginStart="20dp" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnHome"
             android:layout_width="47dp"
             android:layout_height="39dp"
             android:src="@drawable/casinhahome"
+            android:background="@android:color/transparent"
             android:layout_marginStart="20dp" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnExtrato"
             android:layout_width="82dp"
             android:layout_height="49dp"
             android:src="@drawable/compr"
+            android:background="@android:color/transparent"
             android:layout_marginStart="20dp" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/btnPerfil"
             android:layout_width="49dp"
             android:layout_height="42dp"
             android:src="@drawable/pessoacir"
+            android:background="@android:color/transparent"
             android:layout_marginStart="20dp" />
     </LinearLayout>
 
