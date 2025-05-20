@@ -47,7 +47,10 @@ public class BemVindoActivity extends AppCompatActivity {
 
                 if (loginOK) {
                     Toast.makeText(BemVindoActivity.this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
-                    // Aqui você pode redirecionar para outra tela, se quiser
+
+                    // Redirecionar para a tela principal
+                    Intent intent = new Intent(BemVindoActivity.this, Home.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(BemVindoActivity.this, "E-mail ou senha incorretos.", Toast.LENGTH_SHORT).show();
                 }
