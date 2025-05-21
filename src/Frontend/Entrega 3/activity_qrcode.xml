@@ -55,6 +55,7 @@
 
     <!-- Botão COLAR PIX COPIA E COLA -->
     <TextView
+        android:id="@+id/btnColarPix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="COLAR PIX COPIA E COLA"
@@ -65,4 +66,21 @@
         android:paddingRight="16dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp" />
+
+
+    <!-- Botão Voltar -->
+    <TextView
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button_blue"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="9dp"
+        android:text="VOLTAR"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
 </LinearLayout>

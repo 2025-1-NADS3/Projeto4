@@ -5,39 +5,7 @@
     android:orientation="vertical"
     android:background="#C6EAFF">
 
-    <!-- TOPO -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#63D471"
-        android:orientation="horizontal"
-        android:padding="12dp">
-
-        <ImageButton
-            android:id="@+id/btnMenu"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/tresbarrinhas"
-            android:background="@android:color/transparent"
-            android:contentDescription="Menu"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/btnNotificacao"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/sininho"
-            android:background="@android:color/transparent"
-            android:contentDescription="Notificações"
-            android:clickable="true"
-            android:focusable="true" />
-    </LinearLayout>
+    <include layout="@layout/topo_padrao" />
 
     <!-- CONTEÚDO -->
     <LinearLayout
@@ -115,57 +83,5 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- RODAPÉ -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:background="#63D471">
-
-        <ImageButton
-            android:id="@+id/btnSair"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/saiir"
-            android:background="@android:color/transparent"
-            android:contentDescription="Sair"
-            android:layout_marginHorizontal="8dp" />
-
-        <ImageButton
-            android:id="@+id/btnQrCode"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/qrcode"
-            android:background="@android:color/transparent"
-            android:contentDescription="QR Code"
-            android:layout_marginHorizontal="8dp" />
-
-        <ImageButton
-            android:id="@+id/btnHome"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/casinhahome"
-            android:background="@android:color/transparent"
-            android:contentDescription="Home"
-            android:layout_marginHorizontal="8dp" />
-
-        <ImageButton
-            android:id="@+id/btnExtrato"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/compr"
-            android:background="@android:color/transparent"
-            android:contentDescription="Compras"
-            android:layout_marginHorizontal="8dp" />
-
-        <ImageButton
-            android:id="@+id/btnPerfil"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/pessoacir"
-            android:background="@android:color/transparent"
-            android:contentDescription="Perfil"
-            android:layout_marginHorizontal="8dp" />
-    </LinearLayout>
+    <include layout="@layout/bottom_bar" />
 </LinearLayout>

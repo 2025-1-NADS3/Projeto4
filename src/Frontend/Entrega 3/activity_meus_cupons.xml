@@ -5,32 +5,7 @@
     android:orientation="vertical"
     android:background="#C9EBFF">
 
-    <!-- TOPO -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#63D471"
-        android:orientation="horizontal"
-        android:padding="12dp">
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/tresbarrinhas"
-            android:contentDescription="Menu" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/sininho"
-            android:contentDescription="Notificações" />
-    </LinearLayout>
-
+    <include layout="@layout/topo_padrao" />
     <!-- CONTEÚDO -->
     <ScrollView
         android:layout_width="match_parent"
@@ -207,38 +182,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp"
-                android:background="@drawable/borda_caixa_saldo"
+                android:backgroundTint="@color/verde"
                 android:text="VOLTAR"
                 android:textColor="#000000" />
         </LinearLayout>
     </ScrollView>
 
-    <!-- RODAPÉ -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:background="#63D471">
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/saiir" android:contentDescription="Sair"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/qrcode" android:contentDescription="QR Code"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/casinhahome" android:contentDescription="Home"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/compr" android:contentDescription="Compras"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/pessoacir" android:contentDescription="Perfil"
-            android:layout_marginHorizontal="8dp"/>
-    </LinearLayout>
+    <include layout="@layout/bottom_bar" />
 </LinearLayout>

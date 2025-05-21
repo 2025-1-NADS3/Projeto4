@@ -5,31 +5,7 @@
     android:orientation="vertical"
     android:background="#C6EAFF">
 
-    <!-- TOPO -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#63D471"
-        android:orientation="horizontal"
-        android:padding="12dp">
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/tresbarrinhas"
-            android:contentDescription="Menu" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/sininho"
-            android:contentDescription="Notificações" />
-    </LinearLayout>
+    <include layout="@layout/topo_padrao" />
 
     <!-- CONTEÚDO -->
     <ScrollView
@@ -55,34 +31,41 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/borda_caixa_saldo"
+                android:background="@drawable/box_saldo"
                 android:padding="12dp"
-                android:layout_marginBottom="24dp"
-                android:gravity="center_vertical">
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SALDO ATUAL"
-                    android:textStyle="bold"
-                    android:textSize="12sp"
-                    android:textColor="#000"
-                    android:layout_marginEnd="16dp"
-                    android:paintFlags="underline" />
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black" />
 
-                <TextView
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="R$ 1.000.000.000,00"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#000" />
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/olho" />
+                    <TextView
+                        android:id="@+id/textSaldo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="R$ ---------"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/btnMostrarOcultar"
+                        android:layout_width="24dp"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Olho"
+                        android:src="@drawable/olho" />
+                </LinearLayout>
             </LinearLayout>
 
             <!-- Gráfico de barras -->
@@ -103,33 +86,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- RODAPÉ -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:background="#63D471">
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/saiir" android:contentDescription="Sair"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/qrcode" android:contentDescription="QR Code"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/casinhahome" android:contentDescription="Home"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/compr" android:contentDescription="Compras"
-            android:layout_marginHorizontal="8dp"/>
-
-        <ImageView android:layout_width="40dp" android:layout_height="40dp"
-            android:src="@drawable/pessoacir" android:contentDescription="Perfil"
-            android:layout_marginHorizontal="8dp"/>
-    </LinearLayout>
+    <include layout="@layout/bottom_bar" />
 
 </LinearLayout>

@@ -1,0 +1,48 @@
+<!-- res/layout/bottom_bar.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/verde">
+
+    <ImageView
+        android:id="@+id/btnSair"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="8dp"
+        android:contentDescription="Sair"
+        android:src="@drawable/saiir" />
+
+    <ImageView
+        android:id="@+id/btnQrCode"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="8dp"
+        android:contentDescription="QR Code"
+        android:src="@drawable/qrcode" />
+
+    <ImageView
+        android:id="@+id/btnHome"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="8dp"
+        android:contentDescription="Home"
+        android:src="@drawable/casinhahome" />
+
+    <ImageView
+        android:id="@+id/btnHistorico"
+        android:layout_width="82dp"
+        android:layout_height="112dp"
+        android:layout_marginHorizontal="8dp"
+        android:contentDescription="Compras"
+        android:src="@drawable/compr" />
+
+    <ImageView
+        android:id="@+id/btnPerfil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/pessoacir"
+        android:contentDescription="Perfil"
+        android:layout_marginHorizontal="8dp" />
+</LinearLayout>

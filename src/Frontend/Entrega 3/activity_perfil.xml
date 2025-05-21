@@ -5,40 +5,9 @@
     android:orientation="vertical"
     android:background="#C6EAFF">
 
-    <!-- TOPO -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#63D471"
-        android:orientation="horizontal"
-        android:padding="12dp"
-        android:gravity="center_vertical">
+    <include layout="@layout/topo_padrao" />
 
-        <ImageView
-            android:id="@+id/btnAjudaContato"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/tresbarrinhas"
-            android:contentDescription="Menu"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:id="@+id/btnNotificacao"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/sininho"
-            android:contentDescription="Notificações"
-            android:clickable="true"
-            android:focusable="true" />
-    </LinearLayout>
-
-    <!-- CONTEÚDO -->
+    <!-- CONTEÚDO CENTRAL ROLÁVEL -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -51,6 +20,7 @@
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
+            <!-- Ícone de perfil -->
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="96dp"
@@ -58,6 +28,7 @@
                 android:layout_marginBottom="4dp"
                 android:contentDescription="Ícone do Perfil" />
 
+            <!-- Nome do usuário -->
             <TextView
                 android:id="@+id/tv_nome"
                 android:layout_width="wrap_content"
@@ -68,11 +39,13 @@
                 android:textColor="#000000"
                 android:layout_marginBottom="16dp" />
 
+            <!-- Card com faixa sobreposta -->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp">
 
+                <!-- Faixa sobreposta -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,6 +60,7 @@
                     android:textStyle="bold" />
             </FrameLayout>
 
+            <!-- Informações -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,60 +104,5 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- RODAPÉ -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:background="#63D471"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/bntSaiir"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/saiir"
-            android:contentDescription="Sair"
-            android:layout_marginHorizontal="8dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <ImageView
-            android:id="@+id/btnQrCode"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/qrcode"
-            android:contentDescription="QR Code"
-            android:layout_marginHorizontal="8dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <ImageView
-            android:id="@+id/btnHome"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/casinhahome"
-            android:contentDescription="Home"
-            android:layout_marginHorizontal="8dp" />
-
-        <ImageView
-            android:id="@+id/btnextrato"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/compr"
-            android:contentDescription="Compras"
-            android:layout_marginHorizontal="8dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <ImageView
-            android:id="@+id/btnperfil"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/pessoacir"
-            android:contentDescription="Perfil"
-            android:layout_marginHorizontal="8dp"
-            android:clickable="true"
-            android:focusable="true" />
-    </LinearLayout>
+    <include layout="@layout/bottom_bar" />
 </LinearLayout>

@@ -8,45 +8,17 @@
     android:background="@color/azul_clarinho"
     tools:context=".Home">
 
-    <!-- Topo -->
-    <LinearLayout
+    <!-- Topo fixo -->
+    <include
         android:id="@+id/topBar"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:background="@color/verde"
-        android:orientation="horizontal"
-        android:padding="12dp"
+        layout="@layout/topo_padrao"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <ImageView
-            android:id="@+id/btnAjudaContato"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/tresbarrinhas"
-            android:contentDescription="Menu"
-            android:clickable="true"
-            android:focusable="true" />
-
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:id="@+id/btnNotificacao"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/sininho"
-            android:contentDescription="Notificações"
-            android:clickable="true"
-            android:focusable="true"/>
-    </LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Conteúdo com Scroll -->
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -59,42 +31,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:padding="16dp">
 
             <!-- Logo -->
             <ImageView
                 android:layout_width="140dp"
                 android:layout_height="50dp"
-                android:src="@drawable/logo"
                 android:layout_gravity="start"
-                android:layout_marginBottom="8dp" />
-
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/logo" />
 
             <!-- Caixa de saldo -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/box_saldo"
-                android:padding="12dp"
                 android:layout_marginTop="12dp"
-                android:orientation="vertical">
+                android:background="@drawable/box_saldo"
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SALDO ATUAL"
-                    android:textStyle="bold|italic"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
                     android:gravity="center_vertical"
-                    android:layout_marginTop="4dp">
+                    android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/textSaldo"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -103,10 +75,11 @@
                         android:textSize="15sp" />
 
                     <ImageView
+                        android:id="@+id/btnMostrarOcultar"
                         android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:src="@drawable/olho"
-                        android:contentDescription="Olho" />
+                        android:layout_height="match_parent"
+                        android:contentDescription="Olho"
+                        android:src="@drawable/olho" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -123,15 +96,15 @@
                     android:id="@+id/botao_pagar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_margin="8dp"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
-                        android:src="@drawable/pagar_sifrao"
-                        android:contentDescription="Pagar" />
+                        android:contentDescription="Pagar"
+                        android:src="@drawable/pagar_sifrao" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -141,7 +114,6 @@
                         android:textSize="12sp" />
                 </LinearLayout>
 
-                <!-- REPETE PARA OS OUTROS: RECARGA, QR CODE, PROMOÇÕES -->
                 <!-- RECARGA -->
                 <LinearLayout
                     android:id="@+id/botao_recarga"
@@ -216,10 +188,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_marginTop="24dp"
                 android:background="@drawable/box_extrato"
-                android:padding="12dp"
-                android:layout_marginTop="24dp">
+                android:orientation="vertical"
+                android:padding="12dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -243,58 +215,51 @@
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:background="@color/verde"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:id="@+id/bntSaiir"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/saiir"
-            android:contentDescription="Sair"
+            android:id="@+id/btnSair"
+            android:layout_width="50dp"
+            android:layout_height="57dp"
             android:layout_marginHorizontal="8dp"
-            android:clickable="true"
-            android:focusable="true"/>
+            android:contentDescription="Sair"
+            android:src="@drawable/saiir" />
 
         <ImageView
             android:id="@+id/btnQrCode"
-            android:layout_width="48dp"
+            android:layout_width="64dp"
             android:layout_height="48dp"
-            android:src="@drawable/qrcode"
-            android:contentDescription="QR Code"
             android:layout_marginHorizontal="8dp"
-            android:clickable="true"
-            android:focusable="true"/>
+            android:contentDescription="QR Code"
+            android:src="@drawable/qrcode" />
 
         <ImageView
             android:id="@+id/btnHome"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
             android:layout_marginHorizontal="8dp"
             android:contentDescription="Home"
             android:src="@drawable/casinhahome" />
 
         <ImageView
-            android:id="@+id/btnextrato"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/compr"
-            android:contentDescription="Compras"
+            android:id="@+id/btnHistorico"
+            android:layout_width="82dp"
+            android:layout_height="112dp"
             android:layout_marginHorizontal="8dp"
-            android:clickable="true"
-            android:focusable="true"/>
+            android:contentDescription="Compras"
+            android:src="@drawable/compr" />
 
         <ImageView
-            android:id="@+id/btnperfil"
+            android:id="@+id/btnPerfil"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginHorizontal="8dp"
-            android:clickable="true"
             android:contentDescription="Perfil"
-            android:focusable="true"
             android:src="@drawable/pessoacir" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topoPadrao"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#63D471"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/btnMenu"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tresbarrinhas"
+        android:contentDescription="Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnSino"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/sininho"
+        android:contentDescription="Notificações"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
