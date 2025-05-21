@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TransferenciaActivity extends AppCompatActivity {
+public class TransferenciaActivity extends BaseActivity {
 
     private EditText etValor;
     private TextView btnContinuar;

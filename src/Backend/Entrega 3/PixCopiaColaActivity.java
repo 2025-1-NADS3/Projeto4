@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PixCopiaColaActivity extends AppCompatActivity {
+public class PixCopiaColaActivity extends BaseActivity {
 
     private EditText edtChavePix;
     private TextView btnContinuar;

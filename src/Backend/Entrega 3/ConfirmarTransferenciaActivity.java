@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ConfirmarTransferenciaActivity extends AppCompatActivity {
+public class ConfirmarTransferenciaActivity extends BaseActivity {
 
     private TextView txtValor, btnTransferir;
 
