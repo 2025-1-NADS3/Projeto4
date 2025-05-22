@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#C6EAFF">
+
+    <include layout="@layout/topo_padrao" />
+    <!-- CONTEUDO -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Logo + Botao -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/btnMeusCupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MEUS CUPONS"
+                    android:padding="8dp"
+                    android:background="@drawable/bg_rounded_purple_outline"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Titulo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROMOÇÕES"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:textColor="#000" />
+
+            <!-- Grid -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:useDefaultMargins="true"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+                <!-- Card 1: Suco -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#68e16c"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_suco" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suco em Dobro!" android:textStyle="bold" android:textColor="#1B7E00" android:textSize="14sp" android:layout_marginTop="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compre 2 sucos e pague 1 usando Fecapay" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 Cantina Bloco A" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗓️ Até 28/03/2025" android:textSize="12sp" />
+
+                    <!-- Botão clicável -->
+                    <TextView
+                        android:id="@+id/btnCupom1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EU QUERO!"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="6dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_rounded_purple_outline"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <!-- Card 2: Combo -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#68e16c"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_combo" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suco em Dobro!" android:textStyle="bold" android:textColor="#1B7E00" android:textSize="14sp" android:layout_marginTop="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compre 2 sucos e pague 1 usando Fecapay" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 Cantina Bloco A" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗓️ Até 28/03/2025" android:textSize="12sp" />
+
+                    <!-- Botão clicável -->
+                    <TextView
+                        android:id="@+id/btnCupom2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EU QUERO!"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="6dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_rounded_purple_outline"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <!-- Card 3: Brownie -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#68e16c"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_brownie" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suco em Dobro!" android:textStyle="bold" android:textColor="#1B7E00" android:textSize="14sp" android:layout_marginTop="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compre 2 sucos e pague 1 usando Fecapay" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 Cantina Bloco A" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗓️ Até 28/03/2025" android:textSize="12sp" />
+
+                    <!-- Botão clicável -->
+                    <TextView
+                        android:id="@+id/btnCupom3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EU QUERO!"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="6dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_rounded_purple_outline"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <!-- Card 4: Cafe -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#68e16c"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_cafe" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suco em Dobro!" android:textStyle="bold" android:textColor="#1B7E00" android:textSize="14sp" android:layout_marginTop="4dp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Compre 2 sucos e pague 1 usando Fecapay" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍 Cantina Bloco A" android:textSize="12sp" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗓️ Até 28/03/2025" android:textSize="12sp" />
+
+                    <!-- Botão clicável -->
+                    <TextView
+                        android:id="@+id/btnCupom4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EU QUERO!"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:padding="6dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_rounded_purple_outline"
+                        android:textColor="#000" />
+                </LinearLayout>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bottom_bar" />
+</LinearLayout>

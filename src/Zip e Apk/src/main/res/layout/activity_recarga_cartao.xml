@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#C9EBFF">
+
+    <include layout="@layout/topo_padrao" />
+
+    <!-- CONTEÚDO SCROLLÁVEL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="start"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Título -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_credit_card"
+                    android:contentDescription="Ícone Cartão" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECARGA VIA\nCARTÃO DE CRÉDITO"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <!-- Campo valor -->
+            <EditText
+                android:id="@+id/valorRecarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="VALOR"
+                android:text="R$ 0.00"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <!-- Formulário cartão -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/numeroCartao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NÚMERO DO CARTÃO"
+                    android:inputType="number"
+                    android:maxLength="19"
+                    android:textColorHint="#888" />
+
+                <EditText
+                    android:id="@+id/nomeCartao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NOME IMPRESSO NO CARTÃO"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#888" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/validadeCartao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="VALIDADE"
+                        android:textColorHint="#888" />
+
+                    <EditText
+                        android:id="@+id/cvvCartao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="CVV"
+                        android:inputType="number"
+                        android:textColorHint="#888"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/salvarCartao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salvar cartão para próximas compras"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Botão Continuar -->
+            <Button
+                android:id="@+id/btnContinuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTINUAR"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#63D471"
+                android:textColor="#000000" />
+
+            <!-- Informação -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O valor será debitado do seu\ncartão e o saldo atualizado\nimediatamente após aprovação."
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bottom_bar" />
+</LinearLayout>

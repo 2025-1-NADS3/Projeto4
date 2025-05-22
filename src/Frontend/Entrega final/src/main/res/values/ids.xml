@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="iv_sair" type="id" />
-    <item name="iv_qrcode" type="id" />
-    <item name="iv_home" type="id" />
-    <item name="iv_compras" type="id" />
-    <item name="iv_perfil" type="id" />
-</resources>
